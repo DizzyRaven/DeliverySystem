@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DeliverySystem.Logic.Services.DeliveryService">
+    <Position X="8.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAGAAAAAAAAABCAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Services\DeliveryService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Database" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DeliverySystem.Logic.Helpers.Mapping" Collapsed="true">
+    <Position X="5.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Mapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DeliverySystem.Logic.Helpers.MappingProfile" Collapsed="true">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Mapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DeliverySystem.Logic.DTOs.DishDto">
+    <Position X="7.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACQAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DTOs\DishDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DeliverySystem.Logic.DTOs.OrderDto">
+    <Position X="9.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAAAAAAACAAAAACQAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>DTOs\OrderDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DeliverySystem.Logic.DTOs.RestaurantDto">
+    <Position X="11.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQAAAAAAAAAAAAAQAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>DTOs\RestaurantDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DeliverySystem.Logic.Interfaces.IDeliveryService">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAABCAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IDeliveryService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DeliverySystem.Data.Interfaces.IUnitOfWork" Collapsed="true">
+    <Position X="13" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DeliverySystem</name>
+    </assembly>
+    <members>
+        <member name="T:DeliverySystem.Controllers.ClientController">
+            <summary>
+            Controller for client needs only.
+            </summary>
+        </member>
+        <member name="M:DeliverySystem.Controllers.ClientController.#ctor(DeliverySystem.Logic.Interfaces.IDeliveryService,AutoMapper.IMapper)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="deliveryService"> Implementation of class that allows to manipulate with order and their delivery</param>
+            <param name="mapper">Mapper service to map DTO and ViewModel</param>
+        </member>
+        <member name="M:DeliverySystem.Controllers.ClientController.GetRestaurants">
+            <summary>
+            Returns all restaurants stored in DB
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DeliverySystem.Controllers.ClientController.GetDishes(System.String)">
+            <summary>
+            Return all dishes, that current restaurant could offer
+            </summary>
+            <param name="id">ID of restaurant which dishes is needed to be retreived </param>
+            <returns></returns>
+        </member>
+        <member name="M:DeliverySystem.Controllers.ClientController.GetOrders">
+            <summary>
+            Returns all orders
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DeliverySystem.Controllers.ClientController.GetOrder(System.String)">
+            <summary>
+            Return order by Id
+            </summary>
+            <param name="id">ID of desired order in DB</param>
+            <returns></returns>
+        </member>
+        <member name="M:DeliverySystem.Controllers.ClientController.Post(DeliverySystem.ViewModels.OrderViewModel)">
+            <summary>
+            Creates order in DB. This how you could make order
+            </summary>
+            <param name="order">JSON model of order</param>
+            <returns></returns>
+        </member>
+        <member name="T:DeliverySystem.Controllers.CourierController">
+            <summary>
+            Controller for client needs only.
+            </summary>
+        </member>
+        <member name="M:DeliverySystem.Controllers.CourierController.#ctor(DeliverySystem.Logic.Interfaces.IDeliveryService,AutoMapper.IMapper)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="deliveryService"> Implementation of class that allows to manipulate with order and their delivery</param>
+            <param name="mapper">Mapper service to map DTO and ViewModel</param>
+        </member>
+        <member name="M:DeliverySystem.Controllers.CourierController.Get">
+             <summary>
+            Returns all order in DB
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:DeliverySystem.Controllers.CourierController.Get(System.String)">
+            <summary>
+            Return order by Id
+            </summary>
+            <param name="id">ID of order in DB</param>
+            <returns></returns>
+        </member>
+        <member name="M:DeliverySystem.Controllers.CourierController.Post(DeliverySystem.ViewModels.OrderViewModel,System.Guid)">
+            <summary>
+            Allows to change order status
+            </summary>
+            <param name="order">Updated order model</param>
+            <param name="id">Id of desired order</param>
+            <returns></returns>
+        </member>
+        <member name="T:DeliverySystem.Controllers.RestaurantController">
+            <summary>
+            Controller for client needs only.
+            </summary>
+        </member>
+        <member name="M:DeliverySystem.Controllers.RestaurantController.#ctor(DeliverySystem.Logic.Interfaces.IDeliveryService,AutoMapper.IMapper)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="deliveryService"> Implementation of class that allows to manipulate with order and their delivery</param>
+            <param name="mapper">Mapper service to map DTO and ViewModel</param>
+        </member>
+        <member name="M:DeliverySystem.Controllers.RestaurantController.Get">
+            <summary>
+            Returns all orders in DB
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DeliverySystem.Controllers.RestaurantController.Get(System.String)">
+            <summary>
+            Return order by ID
+            </summary>
+            <param name="id">ID of order in DB</param>
+            <returns></returns>
+        </member>
+        <member name="M:DeliverySystem.Controllers.RestaurantController.Post(DeliverySystem.ViewModels.OrderViewModel)">
+            <summary>
+            Allows to change order status
+            </summary>
+            <param name="order">Updated order model</param>
+            <returns></returns>
+        </member>
+        <member name="T:DeliverySystem.ViewModels.DishViewModel">
+            <summary>
+            Model for dish
+            </summary>
+        </member>
+        <member name="P:DeliverySystem.ViewModels.DishViewModel.Id">
+            <summary>
+            Unique identifier
+            </summary>
+        </member>
+        <member name="P:DeliverySystem.ViewModels.DishViewModel.ImageUrl">
+            <summary>
+            URL to dish photo/image
+            </summary>
+        </member>
+        <member name="P:DeliverySystem.ViewModels.DishViewModel.Name">
+            <summary>
+            Dish name
+            </summary>
+        </member>
+        <member name="P:DeliverySystem.ViewModels.DishViewModel.Price">
+            <summary>
+            Dish price in UAH
+            </summary>
+        </member>
+        <member name="P:DeliverySystem.ViewModels.DishViewModel.RestaurantId">
+            <summary>
+            Unique identifier of restaurant which cook this dish
+            </summary>
+        </member>
+        <member name="T:DeliverySystem.ViewModels.OrderViewModel">
+            <summary>
+            Model for order
+            </summary>
+        </member>
+        <member name="P:DeliverySystem.ViewModels.OrderViewModel.Id">
+            <summary>
+            Unique identifier
+            </summary>
+        </member>
+        <member name="P:DeliverySystem.ViewModels.OrderViewModel.Name">
+            <summary>
+            Customer's name
+            </summary>
+        </member>
+        <member name="P:DeliverySystem.ViewModels.OrderViewModel.Address">
+            <summary>
+            Delivery Address
+            </summary>
+        </member>
+        <member name="P:DeliverySystem.ViewModels.OrderViewModel.Mobile">
+            <summary>
+            Customer phone number
+            </summary>
+        </member>
+        <member name="P:DeliverySystem.ViewModels.OrderViewModel.OrderStatus">
+            <summary>
+            Status of order. Could be "New", "Cooking", "Delivering" and "Done"
+            </summary>
+        </member>
+        <member name="P:DeliverySystem.ViewModels.OrderViewModel.CreationDate">
+            <summary>
+            Date and time when order was made
+            </summary>
+        </member>
+        <member name="P:DeliverySystem.ViewModels.OrderViewModel.Dishes">
+            <summary>
+            Dishes, that in this order
+            </summary>
+        </member>
+        <member name="T:DeliverySystem.ViewModels.RestaurantViewModel">
+            <summary>
+            Represents restaurant
+            </summary>
+        </member>
+        <member name="P:DeliverySystem.ViewModels.RestaurantViewModel.Id">
+            <summary>
+            Unique identifier
+            </summary>
+        </member>
+        <member name="P:DeliverySystem.ViewModels.RestaurantViewModel.Name">
+            <summary>
+            Restaurant name
+            </summary>
+        </member>
+        <member name="P:DeliverySystem.ViewModels.RestaurantViewModel.Address">
+            <summary>
+            Restaurant physical address
+            </summary>
+        </member>
+        <member name="P:DeliverySystem.ViewModels.RestaurantViewModel.ImageUrl">
+            <summary>
+            Restaurant image. Could be photo or logo
+            </summary>
+        </member>
+        <member name="P:DeliverySystem.ViewModels.RestaurantViewModel.Dishes">
+            <summary>
+            Dishes that cooked in this restaurant
+            </summary>
+        </member>
+    </members>
+</doc>

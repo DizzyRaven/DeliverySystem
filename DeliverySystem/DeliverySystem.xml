@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DeliverySystem</name>
+    </assembly>
+    <members>
+        <member name="M:DeliverySystem.Controllers.ClientController.GetRestaurants">
+            <summary>
+            Retruns all restaurants stored in DB
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

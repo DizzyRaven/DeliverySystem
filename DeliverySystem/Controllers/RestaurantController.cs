@@ -55,6 +55,7 @@ namespace DeliverySystem.Controllers
             var order = _mapper.Map<OrderViewModel>(orderDto);
             return Ok(order);
         }
+
         /// <summary>
         /// Allows to change order status
         /// </summary>

@@ -14,7 +14,6 @@ namespace DeliverySystem.Controllers
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
-    
     public class ClientController : ControllerBase
     {
         private readonly IDeliveryService _deliveryService;

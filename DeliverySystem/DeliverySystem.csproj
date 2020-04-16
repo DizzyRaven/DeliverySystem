@@ -8,6 +8,10 @@
     <DocumentationFile>C:\KMA\Arch\DeliverySystem\DeliverySystem\DeliverySystem.xml</DocumentationFile>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\KMA\Arch\DeliverySystem\DeliverySystem\DeliverySystem.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
